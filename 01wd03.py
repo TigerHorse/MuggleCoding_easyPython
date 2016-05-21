@@ -47,7 +47,7 @@ print('    [Image ] {}'.format(imgLandlord))
 
 
 '''
-# The following code is part of a trial(unfinished),
+# The following code is part of a trial(unfinished, but n),
 # try to crawl information from http://bj.xiaozhu.com/search-duanzufang-p1-0/
 
 # Preparation for the whole website
@@ -68,13 +68,10 @@ for iLink in linkList:
 
     # Get the data
     tempTitleList = soupEach.select('div.pho_info > h4 > em')
-    print("---------------\nsoup is:\n\n{}\n---------------".format(soupEach))
-    print("---------------\ntitle is:\n\n{}\n---------------".format(tempTitleList))
-    time.sleep(5)
-#    title.extend(tempTitleList)
+    title.extend(tempTitleList)
 
 
-#for i in title:
-#    print(i.get_text())
+for i in title:
+    print(i.get_text())
 
 '''
