@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-finPath = "../../../Plan-for-combating-master/week1/1_2/\
+finPath = "./week1/1_2/\
 1_2answer_of_homework/\
 1_2_homework_required/index.html"
 
@@ -21,7 +21,6 @@ div.row > div > div > div.ratings > p:nth-of-type(2)')
 
 # Save Result
 dataSet = []
-
 for iTitle, iPic, iPrice, iComment, iStar in zip(itemTitle, itemPicSrc, itemPrice, itemComment, itemStar):
     info = {
         'iTitle': iTitle.get_text(),
